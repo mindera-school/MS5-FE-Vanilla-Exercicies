@@ -1,0 +1,41 @@
+@keyframes rollingText {
+    0%{
+        transform:scale(1) translate(0,80%);
+        
+    }
+    100%{
+        transform: scale(0) translate(0,-20%);
+    }
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+main {
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+p {
+    color: white;
+    font-size: 100px;
+    transform: perspective(800px) rotateX(50deg);
+}
+
+#textHolder {
+    text-align: center;
+    animation: rollingText 40s infinite linear;
+}
