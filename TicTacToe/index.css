@@ -1,0 +1,60 @@
+button{
+  color: white;
+  background-color: black;
+  border: 0px;
+  padding: 0px;
+}
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+h1{
+  font-size: 500%;
+  margin-bottom: 0px;
+}
+
+#board {
+  padding-top: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scoreboard{
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 30vw;
+  padding-right: 30vw;
+  padding-top: 2vh;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:150px;
+}
+
+.align {
+  padding-bottom: 6vh;
+  margin-bottom: 6vh;
+}
+
+.mid{
+  border-bottom: 5px solid white;
+}
+
+.top{
+  border-bottom: 5px solid white;
+}
+
+.vertical{
+  border-left: 5px solid  white;
+  border-right: 5px solid white;
+}
+
+.container{
+  height: 15vh;
+  width: 11vw;
+}
