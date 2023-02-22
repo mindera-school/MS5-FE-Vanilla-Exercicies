@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+header{
+    color: aquamarine;
+    background-color: black;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+.h2{
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: black;
+}
+.input{
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    width: 26vw;
+    height: 1.6vw;
+    box-shadow: 0 0 .1rem #fff,
+            0 0 .1rem white,
+            0 0 1rem white,
+            0 0 0.6rem white,
+            0 0 1.6rem white,
+            inset 0 0 0.7rem white;
+}
+#pass{
+    background-color: black;
+    border-color: white;
+    width: 18vw;
+
+}
+.color{
+    color: white;
+    margin-top: 1vw;
+    
+}
+#seccao{
+    width: 100vw;
+    height: 54vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#artigo{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    border: 2px white solid;
+    border-radius: 5px;
+    box-shadow: 0vw 0vw 90vw 0vw white;
+
+}
+#artigo1{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    border: 2px white solid;
+    border-radius: 5px;
+    box-shadow: 0vw 0vw 90vw 0vw white;
+
+}
+.padding{
+    padding-top: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+
+}
+.criar{
+    background-color: aquamarine;
+    width: 28vw;
+    height: 2vw;
+    border-radius: 6px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
