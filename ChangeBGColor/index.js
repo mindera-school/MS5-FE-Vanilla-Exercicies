@@ -1,2 +1,1 @@
-let button = document.querySelector("input");
-button.addEventListener("change", () => document.body.style.background = button.value);
+document.querySelector("input").addEventListener("change", () => document.body.style.background = button.value);
