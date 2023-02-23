@@ -5,7 +5,7 @@ const table = document.getElementById("tabuadaTable")
 
 let number = "";
 
-form.addEventListener("submit",(e)=>{
+document.getElementById("multiplierForm").addEventListener("submit",(e)=>{
     e.preventDefault();
 })
 
