@@ -11,7 +11,7 @@ form.addEventListener("submit",(e)=>{
 
 button.addEventListener("click",()=>{
     number = input.value; 
-    table.innerHTML = null;
+    table.innerHTML = "";
     const defTr= document.createElement("tr");
     const defTh1 = document.createElement("th");
     const defTh2 = document.createElement("th");

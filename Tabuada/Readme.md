@@ -6,11 +6,6 @@
 2. Press the <strong>"Submit"</strong>> button
 The multiplication table for the input number will be displayed on the screen
 
-## Requirements:
-A web browser that supports JavaScript
-
-## Contributing:
-If you would like to contribute to this project, please fork the repository and submit a pull request with your proposed changes.
 
 ## Example
 
