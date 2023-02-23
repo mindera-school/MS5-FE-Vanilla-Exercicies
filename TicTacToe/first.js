@@ -1,17 +1,16 @@
-let count = 1;
-let score1 = 0;
-let score2 = 0;
-let draw = 0;
-const boardArray = document.querySelectorAll(".restart");
-const play = document.getElementById("play");
+let gameCounter = 1;
+let playerOne = 0;
+let playerTwo = 0;
+let drawnGames = 0;
+const boardArray = document.querySelectorAll(".container");
+const playBtn = document.getElementById("play");
 
 boardArray.forEach(function (button) {
   button.addEventListener("click", () => {
-    console.log(count);
-    button.innerHTML = getLetter(count);
+    button.innerHTML = getLetter(gameCounter);
     button.disabled = true;
     checkWin();
-    count++;
+    gameCounter++;
   });
 });
 function verification() {
@@ -24,7 +23,6 @@ function verification() {
       boardArray[4].innerHTML === boardArray[6].innerHTML &&
       boardArray[2].innerHTML != " ")
   ) {
-    console.log("diagonal");
     return true;
   }
   //check horizontal
@@ -39,7 +37,6 @@ function verification() {
       boardArray[5].innerHTML === boardArray[8].innerHTML &&
       boardArray[5].innerHTML != " ")
   ) {
-    console.log("horizontal");
     return true;
   }
   //check vertical
@@ -54,12 +51,10 @@ function verification() {
       boardArray[7].innerHTML === boardArray[8].innerHTML &&
       boardArray[6].innerHTML != " ")
   ) {
-    console.log("vertical");
     return true;
   } else {
-    if (count === 9) {
-      console.log("draw");
-      return "draw";
+    if (gameCounter === 9) {
+      return "game draw";
     }
     return false;
   }
@@ -74,14 +69,14 @@ function getLetter(count) {
 function checkWin() {
   if (verification() == true) {
     giveScore();
-    count = 0;
+    gameCounter = 0;
     disable();
     playAgain();
   }
-  if (verification() == "draw") {
-    count = 0;
-    document.getElementById("draw").innerHTML = draw + 1;
-    draw++;
+  if (verification() == "game draw") {
+    gameCounter = 0;
+    document.getElementById("gameDrawn").innerHTML = drawnGames + 1;
+    drawnGames++;
     playAgain();
   }
   function reset() {
@@ -96,21 +91,21 @@ function checkWin() {
     });
   }
   function giveScore() {
-    if (getLetter(count) === "X") {
-      document.getElementById("scorePl1").innerHTML = score1 + 1;
-      score1++;
+    if (getLetter(gameCounter) === "X") {
+      document.getElementById("scorePl1").innerHTML = playerOne + 1;
+      playerOne++;
     }
-    if (getLetter(count) === "O") {
-      document.getElementById("scorePl2").innerHTML = score2 + 1;
-      score2++;
+    if (getLetter(gameCounter) === "O") {
+      document.getElementById("scorePl2").innerHTML = playerTwo + 1;
+      playerTwo++;
     }
   }
   function playAgain() {
-    play.disabled = false;
-    play.innerHTML = "Play Again";
-    play.addEventListener("click", () => {
+    playBtn.disabled = false;
+    playBtn.innerHTML = "Play Again";
+    playBtn.addEventListener("click", () => {
       reset();
-      play.innerHTML = " ";
+      playBtn.innerHTML = " ";
     });
   }
 }
