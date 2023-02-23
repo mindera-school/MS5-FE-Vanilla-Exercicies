@@ -9,7 +9,7 @@ form.addEventListener("submit",(e)=>{
     e.preventDefault();
 })
 
-button.addEventListener("click",()=>{
+document.getElementById("subBtn").addEventListener("click",()=>{
     number = input.value; 
     table.innerHTML = null;
     const defTr= document.createElement("tr");
