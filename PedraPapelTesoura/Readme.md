@@ -28,39 +28,24 @@ const checkResult = (playerPlay) => {
     switch(playerPlay){
         case ROCK: {
             
-            if(botPlay === ROCK){
-                return DRAW;
-            }
-            if(botPlay === PAPER){
-                return LOSE;
-            }
-            if(botPlay === SCISSORS){
-                return WIN;
-            }
+            if(botPlay === ROCK) return DRAW;
+            if(botPlay === PAPER) return LOSE;
+            if(botPlay === SCISSORS) return WIN;
+            
         }
         case PAPER: {
 
-            if(botPlay === ROCK){
-                return WIN;
-            }
-            if(botPlay === PAPER){
-                return DRAW;
-            }
-            if(botPlay === SCISSORS){
-                return LOSE;
-            }
+            if(botPlay === ROCK) return WIN;
+            if(botPlay === PAPER) return DRAW;
+            if(botPlay === SCISSORS) return LOSE;
+            
         }
         case SCISSORS: {
 
-            if(botPlay === ROCK){
-                return LOSE;
-            }
-            if(botPlay === PAPER){
-                return WIN;
-            }
-            if(botPlay === SCISSORS){
-                return DRAW;
-            }
+            if(botPlay === ROCK) return LOSE;
+            if(botPlay === PAPER) return WIN;
+            if(botPlay === SCISSORS) return DRAW;
+            
         }
     }
 }
