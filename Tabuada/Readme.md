@@ -4,6 +4,7 @@
 ## Usage:
 1. Input a number into the designated field
 2. Press the <strong>"Submit"</strong>> button
+
 The multiplication table for the input number will be displayed on the screen
 
 

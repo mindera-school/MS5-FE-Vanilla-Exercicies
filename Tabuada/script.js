@@ -5,11 +5,11 @@ const table = document.getElementById("tabuadaTable")
 
 let number = "";
 
-form.addEventListener("submit",(e)=>{
+document.getElementById("multiplierForm").addEventListener("submit",(e)=>{
     e.preventDefault();
 })
 
-button.addEventListener("click",()=>{
+document.getElementById("subBtn").addEventListener("click",()=>{
     number = input.value; 
     table.innerHTML = "";
     const defTr= document.createElement("tr");
