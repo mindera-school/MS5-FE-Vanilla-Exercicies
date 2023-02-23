@@ -20,7 +20,7 @@ and wait for the result 👍
 
 The Game is simple :
 
-```
+```js
 const checkResult = (playerPlay) => {
 
     const botPlay = random(ROCK || PAPER || SCISSORS);
@@ -68,7 +68,7 @@ const checkResult = (playerPlay) => {
 
 ##  Credits
 
-Thanks to **me** that make that project possible! 
+Thanks to the teachers and Mindera for the learning opportunity!
 
 ## Example
 
