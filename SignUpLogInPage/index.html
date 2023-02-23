@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignUp LogIn Page</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>Mindera School</h1>
+    </header>
+
+    <main>
+      <!-- Sign Up -->
+      <div class="container">
+        <form>
+          <div class="title">
+            <h2>Criar Conta</h2>
+            <h3>Apenas demora alguns segundos</h3>
+          </div>
+
+          <label for="name">
+            <span>Nome</span>
+            <input name="name" placeholder="Nome" id="name" />
+          </label>
+
+          <label for="username">
+            <span>Nome de utilizador</span>
+            <input name="username" placeholder="Nome de utilizador" id="username" />
+          </label>
+
+          <label for="email">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="Email" id="email" />
+          </label>
+
+          <label for="password">
+            <span>Palavra-Passe</span>
+            <input type="password" name="password" placeholder="Palavra-Passe" id="password" />
+          </label>
+
+          <button type="submit">Criar</button>
+        </form>
+      </div>
+
+      <!-- Log In -->
+      <div class="container">
+        <form>
+          <div class="title">
+            <h2>Iniciar Sessão</h2>
+          </div>
+
+          <label for="username">
+            <span>Nome de utilizador</span>
+            <input name="username" placeholder="Nome de utilizador" id="username" />
+          </label>
+
+          <label>
+            <span for="password">Palavra-Passe</span>
+            <input type="password" name="password" placeholder="Palavra-Passe" id="password" />
+          </label>
+
+          <button type="submit" name="submit">Entrar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>We craft software witch people we love.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
