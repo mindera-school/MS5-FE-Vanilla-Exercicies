@@ -1,15 +1,11 @@
-const firstAnchor = document.getElementById("firstA");
-const secondAnchor = document.getElementById("secondA");
-const thirdAnchor = document.getElementById("thirdA");
-
-const title = document.getElementById("h1").innerHTML;
-
-if(title == "Home"){
-    firstAnchor.style.backgroundColor = "red";
-}
-if(title == "About"){
-    secondAnchor.style.backgroundColor = "green";
-}
-if(title == "Contact"){ 
-    thirdAnchor.style.backgroundColor = "pink";
-}
+switch(document.querySelector("h1").innerHTML){
+    case "Home":
+        document.getElementById("homeLink").style.backgroundColor = "red";
+      break;
+    case "About" :
+        document.getElementById("aboutLink").style.backgroundColor = "green";
+      break;
+    case "Contact" :
+        document.getElementById("contactLink").style.backgroundColor = "pink";
+      break;
+  }
