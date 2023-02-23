@@ -1,9 +1,9 @@
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
-const result = document.getElementById("result");
+const output = document.getElementById("result");
 
-const results = {
+const RESULT = {
   ROCK: {
     ROCK: "DRAW",
     PAPER: "LOSE",
@@ -32,5 +32,5 @@ function getRandomPlay(plays) {
 
 function play(playerPlay) {
   const botPlay = getRandomPlay(["ROCK", "PAPER", "SCISSORS"]);
-  result.innerHTML = playerPlay + " - " + results[playerPlay][botPlay] + " - "+ botPlay;
+  output.innerHTML = playerPlay + " - " + RESULT[playerPlay][botPlay] + " - " + botPlay;
 }
