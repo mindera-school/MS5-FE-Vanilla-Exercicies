@@ -1,7 +1,7 @@
 const button = document.getElementById("subBtn");
-const input = document.getElementById("multiplierInput");
+const input = document.getElementById("chosenMultiplierInput");
 const form = document.getElementById("multiplierForm");
-const table = document.getElementById("tabuadaTable") 
+const table = document.getElementById("tabuadaResultGrid") 
 
 let number = "";
 
