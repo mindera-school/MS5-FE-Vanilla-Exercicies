@@ -1,0 +1,33 @@
+* {
+  color: white;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+body {
+  background-color: black;
+}
+
+button {
+  background-color: red;
+  border: 1px;
+  box-shadow: 0 0 20px red;
+  width: 8vw;
+  height: 5vh;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#buttonsContainer{
+    width: 27vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
