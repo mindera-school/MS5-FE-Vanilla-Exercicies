@@ -12,4 +12,5 @@ Some basic exercises build by the Mindera School 5 class
 | Dynamic Nav Bar | @LeoHabs | [Demo](https://mindera-school.github.io/MS5-FE-Vanilla-Exercicies/DinamicNavMenu) | [Code](https://github.com/mindera-school/MS5-FE-Vanilla-Exercicies/tree/main/DinamicNavMenu) |
 | PedraPapelTesoura | @Rocha1313 | [Demo](https://mindera-school.github.io/MS5-FE-Vanilla-Exercicies/PedraPapelTesoura) | [Code](https://github.com/mindera-school/MS5-FE-Vanilla-Exercicies/tree/main/PedraPapelTesoura) |
 | Pricing Table | @LeoHabs | [Demo](https://mindera-school.github.io/MS5-FE-Vanilla-Exercicies/PricingTable/) | [Code](https://github.com/mindera-school/MS5-FE-Vanilla-Exercicies/tree/main/PricingTable) |
+| SignUp LogIn Page | @Pedroooliveria | [Demo](https://mindera-school.github.io/MS5-FE-Vanilla-Exercicies/SignUpLogInPage/) | [Code](https://github.com/mindera-school/MS5-FE-Vanilla-Exercicies/tree/main/SignUpLogInPage) |
 | Star Wars Roll | @LeoHabs | [Demo](https://mindera-school.github.io/MS5-FE-Vanilla-Exercicies/StarWarsRoll) | [Code](https://github.com/mindera-school/MS5-FE-Vanilla-Exercicies/tree/main/StarWarsRol) |
