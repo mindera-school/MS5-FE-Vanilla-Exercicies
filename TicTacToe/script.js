@@ -5,7 +5,7 @@ let drawnGames = 0;
 const boardArray = document.querySelectorAll(".container");
 const playBtn = document.getElementById("play");
 
-boardArray.forEach(function (button) {
+boardArray.forEach(button => {
   button.addEventListener("click", () => {
     button.innerHTML = getLetter(gameCounter);
     button.disabled = true;
@@ -14,7 +14,7 @@ boardArray.forEach(function (button) {
   });
 });
 function verification() {
-  //check diogonal
+  //check diagonal
   if (
     (boardArray[0].innerHTML === boardArray[4].innerHTML &&
       boardArray[4].innerHTML === boardArray[8].innerHTML &&
@@ -52,19 +52,14 @@ function verification() {
       boardArray[6].innerHTML != " ")
   ) {
     return true;
-  } else {
-    if (gameCounter === 9) {
+  } else if (gameCounter === 9) {
       return "game draw";
     }
     return false;
   }
 }
 function getLetter(count) {
-  if (count % 2 == 0) {
-    return "X";
-  } else {
-    return "O";
-  }
+  count % 2 == 0 ? "X" : "O";
 }
 function checkWin() {
   if (verification() == true) {
@@ -80,7 +75,7 @@ function checkWin() {
     playAgain();
   }
   function reset() {
-    boardArray.forEach(function (e) {
+    boardArray.forEach(e => {
       e.innerHTML = " ";
       e.disabled = false;
     });
@@ -94,8 +89,7 @@ function checkWin() {
     if (getLetter(gameCounter) === "X") {
       document.getElementById("scorePl1").innerHTML = playerOne + 1;
       playerOne++;
-    }
-    if (getLetter(gameCounter) === "O") {
+    } else {
       document.getElementById("scorePl2").innerHTML = playerTwo + 1;
       playerTwo++;
     }
