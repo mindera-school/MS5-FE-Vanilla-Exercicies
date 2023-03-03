@@ -62,13 +62,13 @@ function getLetter(count) {
   count % 2 == 0 ? "X" : "O";
 }
 function checkWin() {
-  if (verification() == true) {
+  if (verification()) {
     giveScore();
     gameCounter = 0;
     disable();
     playAgain();
   }
-  if (verification() == "game draw") {
+  if (verification() === "game draw") {
     gameCounter = 0;
     document.getElementById("gameDrawn").innerHTML = drawnGames + 1;
     drawnGames++;
@@ -81,7 +81,7 @@ function checkWin() {
     });
   }
   function disable() {
-    boardArray.forEach(function (e) {
+    boardArray.forEach( (e) => {
       e.disabled = true;
     });
   }
