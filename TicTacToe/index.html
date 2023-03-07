@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Tic Tac Toe</title>
+    <link
+      rel="icon"
+      href="png-transparent-tic-tac-toe-oxo-chess-video-game-chess.png"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Tic tac toe</h1>
+      <div id="board">
+        <div>
+          <button id="topleft" class="collumnBorder container"> </button>
+          <button id="midleft" class="collumnBorder container"> </button>
+          <button id="lowleft" class="container"> </button>
+        </div>
+        <div>
+          <button id="topmid" class="collumnBorder vertical container" > </button>
+          <button id="midmid" class="collumnBorder vertical container"> </button>
+          <button id="lowmid" class="vertical container"> </button>
+        </div>
+        <div>
+          <button id="topright" class="collumnBorder container"> </button>
+          <button id="midright" class="collumnBorder container"> </button>
+          <button id="lowright" class="container"> </button>
+        </div>
+      </div>
+      <button disabled id="play"></button>
+      <div class="scoreboard">
+        <span>Player 1 (X)</span>
+        <span>-</span>
+        <span>Player 2 (O)</span>
+      </div>
+      <div class="scoreboard">
+        <span id="scorePl1"> 0 </span>
+        <span id="gamesDrawn"> 0 </span>
+        <span id="scorePl2"> 0 </span>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
