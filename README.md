@@ -5,7 +5,6 @@ Some basic exercises build by the Mindera School 5 class
 
 | Name          | By       | Demo                                                                             | Code                                                                                       |
 | ------------- | -------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-
 | Tabuada | @LeoHabs | [Demo](https://mindera-school.github.io/MS5-FE-Vanilla-Exercicies/Tabuada/) | [Code](https://github.com/mindera-school/MS5-FE-Vanilla-Exercicies/tree/main/Tabuada) |
 | ChangeBGColor | @Adan0k | [Demo](https://mindera-school.github.io/MS5-FE-Vanilla-Exercicies/ChangeBGColor) | [Code](https://github.com/mindera-school/MS5-FE-Vanilla-Exercicies/tree/main/ChangeBGColor) |
 | Circular Progress Bar | @LeoHabs | [Demo](https://mindera-school.github.io/MS5-FE-Vanilla-Exercicies/CircularProgressBar) | [Code](https://github.com/mindera-school/MS5-FE-Vanilla-Exercicies/tree/main/CircularProgressBar) |
