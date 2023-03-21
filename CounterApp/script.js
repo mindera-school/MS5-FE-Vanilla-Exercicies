@@ -10,5 +10,5 @@
         } )
         buttonPlus.addEventListener("click", ()=>{
             value++
-            countDisplay.textContent= value;
+            countDisplay.textContent = value;
         } )
