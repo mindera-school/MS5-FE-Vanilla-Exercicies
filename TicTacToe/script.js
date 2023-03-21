@@ -5,7 +5,7 @@ let drawnGames = 0;
 const boardArray = document.querySelectorAll(".container");
 const playBtn = document.getElementById("play");
 
-boardArray.forEach(button => {
+boardArray.forEach((button) => {
   button.addEventListener("click", () => {
     button.innerHTML = getLetter(gameCounter);
     button.disabled = true;
@@ -53,47 +53,47 @@ function verification() {
   ) {
     return true;
   } else if (gameCounter === 9) {
-      return "game draw";
-    }
-    return false;
+    return "game draw";
   }
+  return false;
 }
-function getLetter(count) {
-  count % 2 == 0 ? "X" : "O";
+function getLetter(gameCounter) {
+  return gameCounter % 2 === 0 ? "X" : "O";
 }
 function checkWin() {
-  if (verification()) {
+  if (verification() === true) {
     giveScore();
     gameCounter = 0;
     disable();
     playAgain();
-  }
-  if (verification() === "game draw") {
+  } else if (verification() === "game draw") {
     gameCounter = 0;
-    document.getElementById("gameDrawn").innerHTML = drawnGames + 1;
+    document.getElementById("gamesDrawn").innerHTML = drawnGames + 1;
     drawnGames++;
     playAgain();
   }
   function reset() {
-    boardArray.forEach(e => {
+    boardArray.forEach((e) => {
       e.innerHTML = " ";
       e.disabled = false;
     });
   }
   function disable() {
-    boardArray.forEach( (e) => {
+    boardArray.forEach((e) => {
       e.disabled = true;
     });
   }
   function giveScore() {
-    if (getLetter(gameCounter) === "X") {
+    let winningLetter = getLetter(gameCounter);
+    if (winningLetter === "X") {
       document.getElementById("scorePl1").innerHTML = playerOne + 1;
       playerOne++;
-    } else {
+    } else if (winningLetter === "O") {
       document.getElementById("scorePl2").innerHTML = playerTwo + 1;
       playerTwo++;
     }
   }
+
   function playAgain() {
     playBtn.disabled = false;
     playBtn.innerHTML = "Play Again";
