@@ -8,7 +8,7 @@
             value--;
             countDisplay.textContent = value;
         } )
-        buttonPlus.addEventListener("click", () =>{
-            value++;
+        buttonPlus.addEventListener("click", ()=>{
+            value++
             countDisplay.textContent = value;
         } )
