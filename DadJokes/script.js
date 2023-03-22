@@ -15,7 +15,7 @@ const piadas = [
   const piadaElement = document.getElementById('piada');
   const botaoElement = document.getElementById('botao');
   
-  botaoElement.addEventListener('click', function() {
+  botaoElement.addEventListener('click', () => {
     const piadaAleatoria = piadas[Math.floor(Math.random() * piadas.length)];
     piadaElement.innerHTML = piadaAleatoria;
   });
