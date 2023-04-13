@@ -14,45 +14,33 @@ boardArray.forEach((button) => {
   });
 });
 function verification() {
-  //check diagonal
-  if (
-    (boardArray[0].innerHTML === boardArray[4].innerHTML &&
-      boardArray[4].innerHTML === boardArray[8].innerHTML &&
-      boardArray[0].innerHTML != " ") ||
-    (boardArray[2].innerHTML === boardArray[4].innerHTML &&
-      boardArray[4].innerHTML === boardArray[6].innerHTML &&
-      boardArray[2].innerHTML != " ")
-  ) {
-    return true;
+  const winningCombos = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+
+  if (gameCounter < 3) {
+    return false;
   }
-  //check horizontal
-  if (
-    (boardArray[0].innerHTML === boardArray[3].innerHTML &&
-      boardArray[3].innerHTML === boardArray[6].innerHTML &&
-      boardArray[0].innerHTML != " ") ||
-    (boardArray[1].innerHTML === boardArray[4].innerHTML &&
-      boardArray[4].innerHTML === boardArray[7].innerHTML &&
-      boardArray[1].innerHTML != " ") ||
-    (boardArray[2].innerHTML === boardArray[5].innerHTML &&
-      boardArray[5].innerHTML === boardArray[8].innerHTML &&
-      boardArray[5].innerHTML != " ")
-  ) {
-    return true;
+
+  for (let i = 0; i < winningCombos.length; i++) {
+    const [a, b, c] = winningCombos[i];
+
+    if (
+      boardArray[a].innerHTML === boardArray[b].innerHTML &&
+      boardArray[b].innerHTML === boardArray[c].innerHTML &&
+      boardArray[a].innerHTML !== ""
+    ) {
+      return true;
+    }
   }
-  //check vertical
-  if (
-    (boardArray[0].innerHTML === boardArray[1].innerHTML &&
-      boardArray[1].innerHTML === boardArray[2].innerHTML &&
-      boardArray[0].innerHTML != " ") ||
-    (boardArray[3].innerHTML === boardArray[4].innerHTML &&
-      boardArray[4].innerHTML === boardArray[5].innerHTML &&
-      boardArray[3].innerHTML != " ") ||
-    (boardArray[6].innerHTML === boardArray[7].innerHTML &&
-      boardArray[7].innerHTML === boardArray[8].innerHTML &&
-      boardArray[6].innerHTML != " ")
-  ) {
-    return true;
-  } else if (gameCounter === 9) {
+  if (gameCounter === 9) {
     return "game draw";
   }
   return false;
@@ -62,10 +50,12 @@ function getLetter(gameCounter) {
 }
 function checkWin() {
   if (verification() === true) {
-    giveScore();
-    gameCounter = 0;
-    disable();
-    playAgain();
+    if (gameCounter >= 3) {
+      giveScore();
+      gameCounter = 0;
+      disable();
+      playAgain();
+    }
   } else if (verification() === "game draw") {
     gameCounter = 0;
     document.getElementById("gamesDrawn").innerHTML = drawnGames + 1;
@@ -74,7 +64,7 @@ function checkWin() {
   }
   function reset() {
     boardArray.forEach((e) => {
-      e.innerHTML = " ";
+      e.innerHTML = "";
       e.disabled = false;
     });
   }
