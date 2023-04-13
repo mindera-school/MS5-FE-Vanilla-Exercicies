@@ -84,12 +84,12 @@ function checkWin() {
     }
   }
 
+  playBtn.addEventListener("click", () => {
+    reset();
+  });
+
   function playAgain() {
     playBtn.disabled = false;
     playBtn.innerHTML = "Play Again";
-    playBtn.addEventListener("click", () => {
-      reset();
-      playBtn.innerHTML = " ";
-    });
   }
 }
